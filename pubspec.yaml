@@ -1,0 +1,7 @@
+name: simple_crm
+version: 0.0.1
+author: Pierre-Olivier Nadeau
+description: A Simple CRM Interface
+homepage: http://www.pierre-olivier.com
+dependencies:
+  browser: any

@@ -1,0 +1,202 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111111;
+  background-image: url(img/bg.jpg);
+  background-repeat: repeat-y;
+  background-position: center top;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #eeeeee;
+  width: 940px;
+  margin: 0 auto;
+}
+
+header,section,aside,footer{
+  display: block;
+}
+
+header {
+  color: #ffffff;
+  text-align: center;
+  font: 32pt Helvetica,"Helvetica neue", Arial, sans-serif;
+  text-transform: uppercase;
+  padding-top: 30px ;
+  text-shadow: 1px 1px 2px #000;
+}
+
+aside {
+  float: left;
+  width: 170px;
+  min-height: 480px;
+  margin: 0 0 20px 0;
+}
+
+section{
+  float: right;
+  width: 728px;
+  padding-left: 20px;
+  margin: 0 0 20px 0px;
+  border-left: 2px dotted #b2a497;
+}
+
+footer {
+  text-align: center;
+  clear: both !important;
+  width: 940px;
+  height: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  color: #200f08;
+  background: #ddd3bf;  
+  opacity: 0.50;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ddd3bf),color-stop(1, #bcae91));
+  -webkit-border-radius: 12px;
+}
+
+h1, p {
+  color: #fff;
+}
+
+h3#error {
+  color: red;
+  font-weight: bold;
+}
+
+h3#confirm {
+  color: green;
+  font-weight: bold;
+}
+
+a {
+  border: 0px;
+}
+
+.github {
+  height: 50px;
+}
+
+#follow {
+  font-size: 40pt;
+  color: #000;
+  padding-top: 30px;
+}
+
+#contacts {
+  float: left;
+  height: 100%;
+  width: 728px;
+  border: 2px black;
+}
+
+#list-contacts {
+  width: 728px;
+}
+
+.contact {
+  width: 728px;
+}
+
+.hidden {
+  display: none;
+}
+
+#add-contacts {
+  clear: both;
+  height: 100%;
+  width: 728px;
+  border: 2px blue;
+}
+
+.icon {
+  width: 16px;
+}
+
+.name {
+  width: 200px;
+}
+
+.email {
+  width: 300px;
+}
+
+/*
+Table style inspired from : http://www.klavina.com/csstablegallery/winterblues.css
+*/
+table {
+  font: 85% "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 728px;
+  border-collapse: collapse; color: #333;
+  background: #F3F5F7;
+}
+
+table a {
+  color: #3A4856; 
+  text-decoration: none; 
+  border-bottom: 1px solid #C6C8CB;
+}  
+
+table a:visited {
+  color: #777;
+}
+
+table a:hover {
+  color: #000;
+}  
+
+table caption {
+  text-align: left; text-transform: uppercase; 
+  padding-bottom: 10px; 
+  font: 200% "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
+  color: #fff;
+}
+
+table thead th {
+  background: #3A4856; 
+  padding: 15px 10px; 
+  color: #fff; 
+  text-align: left; 
+  font-weight: normal;
+}
+
+table tbody, table thead {
+  border-left: 1px solid #EAECEE; 
+  border-right: 1px solid #EAECEE;
+}
+
+table tbody {
+  border-bottom: 1px solid #EAECEE;
+}
+                      
+table tbody td, table tbody th {
+  padding: 10px; 
+  background: url("img/td_back.gif") repeat-x; 
+  text-align: left;
+}
+
+table tbody tr {
+  background: #F3F5F7;
+}
+
+table tbody  tr:hover {
+  background: #EAECEE; 
+  color: #111;
+}
+
+table tfoot td, table tfoot th, table tfoot tr {
+  text-align: left; 
+  font: 120%  "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif; 
+  text-transform: uppercase; 
+  background: #fff; 
+  padding: 10px;
+}

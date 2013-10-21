@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple CRM</title>
+    <link rel="stylesheet" href="simple_crm.css">
+  </head>
+  <body>
+    <header id="title">
+      <h1>Simple CRM</h1>
+    </header>
+    
+    <aside id="left">
+      <h3>Options</h3>
+        <ul id="config">
+          <li class="config-item"><span id="view-button">View entries</span></li>
+          <li class="config-item"><span id="add-button">Add entry</span></li>
+        </ul>
+      <h3 id="error"></h3>
+      <h3 id="confirm"></h3>
+    </aside>
+    
+    <section id="right">           
+      <div id="contacts">
+        <table summary="List of contacts">
+          <caption>List of contacts</caption>
+          <thead>
+            <tr>
+              <th scope="col" class="icon">&nbsp;</th>
+              <th scope="col" class="icon">&nbsp;</th>
+              <th scope="col" class="name">Name</th>
+              <th scope="col" class="email">Email</th>
+              <th scope="col">Phone</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="3">Total contacts</th>
+              <td colspan="2" id="total-contacts"></td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr >
+              <td colspan="5">
+                <div id="list-contacts"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="add-contacts" class="hidden">
+        <table summary="Add a new contact">
+          <caption>Add a new contact</caption>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td colspan="3" style="text-align: right;"><span id="btnAdd">Add contact</span></td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr >
+              <td>
+                <input type="text" id="name" placeholder="First Last" required></input>
+              </td>
+              <td>
+                <input type="email" id="email" placeholder="you@web.com" required></input>
+              </td>
+              <td>
+                <input type="tel" id="phone" placeholder="800-555-5555" required></input>
+              </td>
+            </tr>
+          </tbody>
+        </table>  
+      </div>
+    </section>
+    
+    <footer>
+      <p id="follow">Follow me on <a href="https://github.com/EachOnSet/" target="_blank"><img class="github" src="img/github.png"></a></p> 
+    </footer>
+
+    <script type="application/dart" src="simple_crm.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
