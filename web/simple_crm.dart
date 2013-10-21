@@ -165,7 +165,7 @@ void refreshContactList(){
   int i = 0;
 
   for (String key in window.localStorage.keys) {
-   // if (key.toString().substring(0,3) == "CRM") {
+    if (key.toString().substring(0,3) == "CRM") {
       // Setup
       String strJSON = window.localStorage[key];
       Contact currentContact = new Contact.JSON(JSON.decode(strJSON));
@@ -179,7 +179,7 @@ void refreshContactList(){
       htmlContact += '</div>';
       DivElement div = new Element.html(htmlContact);
       query('#list-contacts').children.add(div);
-      htmlContact = '<div class="contact hidden" id="hidcontact${i}"><span class="icon" id="save-ct${i}"><img src="img/accept.png"></span><span class="icon" id="can-ct${i}"><img src="img/cancel.png"></span>';
+      htmlContact = '<div class="contact" id="hidcontact${i}"><span class="icon" id="save-ct${i}"><img src="img/accept.png"></span><span class="icon" id="can-ct${i}"><img src="img/cancel.png"></span>';
       htmlContact += '<span><input class="name" type="text" id="name${i}" placeholder="First Last" required value="${currentContact.name}"></input></span>';
       htmlContact += '<span><input class="email" type="email" id="email${i}" placeholder="you@web.com" required value="${currentContact.email}"></input></span>';
       htmlContact += '<span><input type="tel" id="phone${i}" placeholder="800-555-5555" required value="${currentContact.phone}"></input></span>';
@@ -215,7 +215,7 @@ void refreshContactList(){
       //Count
       i++;
     }
-  //}
+  }
 }
 
 // Error helper
