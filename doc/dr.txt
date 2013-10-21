@@ -1,0 +1,17 @@
+ex06
+
+8/10
+
+  Contact(name, email, phone) {
+    this.name = name;
+    this.email = email;
+    this.phone = phone;
+  }
+->
+  Contact(this.name, this.email, this.phone);
+
+modifier Phone:
+(-1) Breaking on exception: The null object does not have a getter 'value'.
+
+supprimer le contact:
+(-1) Breaking on exception: The null object does not have a getter 'classes'.
